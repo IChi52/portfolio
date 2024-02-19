@@ -21,19 +21,58 @@
 
 <body>
     <div class="page-container">
+        <!-- tabs -->
         <div class="tabs-container">
             <ul class="nav">
-                <li class="nav-item" data-tab-target><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item" data-tab-target><a class="nav-link active" href="#about">About</a></li>
                 <li class="nav-item" data-tab-target><a class="nav-link" href="#projects">Projects</a></li>
                 <li class="nav-item" data-tab-target><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
         </div>
 
         <div class="tab-content">
-            <div id="about" data-tab-content class="active">About</div>
-            <div id="projects" data-tab-content>Project</div>
-            <div id="contact" data-tab-content>Contact Me</div>
+            <main>
+                <div id="about" class="main_div_1 active" data-tab-content>
+                    <img id="img-profile" src="static/banner.JPG" alt="profile photo" width="250px" height="250px">
+                    <p id="paragraph_1">Hi there!
+                        <br>My name is I-Chi, a proud graduate from the Computing & Information Technology at University of St Andrews. 
+                        <br> I'm passionate about embracing challenges and continually expanding my skill set through learning.
+                        <br> As a frontend developer applicant, I'm eager to explore exciting opportunities!
+                        
+                        
+                    </p>
+                    <p id="paragraph_2">
+                        <br> In my leisure time, I actively participate in diverse events and engage with student societies, seeking opportunities to broaden my knowledge and acquire new skills.  
+                        <div class="img-section">
+                            <div class="img-cropper">
+                                <img src="static/banner.JPG" class="img-event" alt="football photo" width="150px" height="150px">
+                            </div>
+                            <div class="img-cropper">
+                                <img src="static/banner.JPG" class="img-event" alt="tea ceremony photo" width="150px" height="150px">
+                            </div>
+                            <div class="img-cropper">
+                                <img src="static/banner.JPG" class="img-event" alt="fitness photo" width="150px" height="150px">
+                            </div>
+                        </div>
+
+
+                    </p>
+                        
+
+                </div>
+                
+                <div id="projects" class="main_div_2" data-tab-content>
+                    <br> My programming experience has primarily been in an academic context.
+                </div>
+
+                <div id="contact" class="main_div_3" data-tab-content>
+
+                </div>
+                
+            </main>
+
         </div>
+
     </div>
 
     <!-- JS -->
