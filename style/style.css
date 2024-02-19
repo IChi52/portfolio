@@ -5,7 +5,7 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: auto;
   width: 100%;
   background-color: #d2d4c8;
 }
@@ -34,23 +34,43 @@ html, body {
 }
 .tabs-container > ul > li {
   flex: 1;
-  background-color: #e0e2db;
   border-radius: 0.5vw 0.5vw 0 0;
-  border: 1px solid #d4d4d4;
+  border-right: 1px solid #d4d4d4;
   box-shadow: 30px 15px 20px black;
 }
 .tabs-container > ul > li > a {
   display: block;
-  color: #889696;
+  color: #e0e2db;
   width: 100%;
   height: 100%;
   position: relative;
   text-align: center;
+  border-radius: 0.5vw 0.5vw 0 0;
+}
+.tabs-container > ul > li > a:hover {
+  color: #d2d4c8;
+  background-color: #b8bdb5;
+  border-radius: 0.5vw 0.5vw 0 0;
+}
+.tabs-container > ul > li > a.active {
+  color: #889696;
+  background-color: #e0e2db;
+}
+.tabs-container > ul > li > a:not(.active) {
+  background-color: #889696;
 }
 
 .tab-content {
   background-color: #e0e2db;
   height: 100%;
+}
+.tab-content #img-profile {
+  border: 1px solid #b8bdb5;
+  margin: 2vw;
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  overflow: hidden;
 }
 
 [data-tab-content] {
@@ -58,4 +78,36 @@ html, body {
 }
 [data-tab-content].active {
   display: block;
+}
+
+#paragra2 {
+  width: 100%;
+}
+
+.img-cropper {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+.img-cropper:hover {
+  opacity: 1;
+}
+.img-cropper.img-event {
+  display: inline-block;
+  margin: 0 auto;
+  margin-left: -25%;
+  height: 100%;
+  width: auto;
+}
+
+.img-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10vw;
 }/*# sourceMappingURL=style.css.map */
