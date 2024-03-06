@@ -13,7 +13,8 @@
     <!-- introduce fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
 
 
     <title>Welcome!</title>
@@ -24,58 +25,274 @@
         <!-- tabs -->
         <div class="tabs-container">
             <ul class="nav">
-                <li class="nav-item" data-tab-target><a class="nav-link active" href="#about">About</a></li>
-                <li class="nav-item" data-tab-target><a class="nav-link" href="#projects">Projects</a></li>
-                <li class="nav-item" data-tab-target><a class="nav-link" href="#contact">Contact</a></li>
+                <li class="nav-item"><a class="nav-link active" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
             </ul>
         </div>
 
         <div class="tab-content">
             <main>
                 <div id="about" class="main_div_1 active" data-tab-content>
-                    <img id="img-profile" src="static/banner.JPG" alt="profile photo" width="250px" height="250px">
-                    <p id="paragraph_1">Hi there!
-                        <br>My name is I-Chi, a proud graduate from the Computing & Information Technology at University of St Andrews. 
-                        <br> I'm passionate about embracing challenges and continually expanding my skill set through learning.
-                        <br> As a frontend developer applicant, I'm eager to explore exciting opportunities!
-                        
-                        
-                    </p>
-                    <p id="paragraph_2">
-                        <br> In my leisure time, I actively participate in diverse events and engage with student societies, seeking opportunities to broaden my knowledge and acquire new skills.  
-                        <div class="img-section">
-                            <div class="img-cropper">
-                                <img src="static/banner.JPG" class="img-event" alt="football photo" width="150px" height="150px">
+                    <div class="tab1-container">
+                        <div class="tab1-content">
+                                <img id="img-profile" src="static/profile.jpg" alt="profile photo" width="250px" height="250px">
+                                <p id="paragraph_1" class="main-text-para">
+                                    Hi there!
+                                    <br>My name is <span class="highlight">I-Chi</span> , a proud graduate from the <span class="highlight">Computing & Information Technology</span> at <span class="highlight">University of St Andrews</span>. 
+                                    <br> I'm passionate about embracing challenges and continually expanding my skill set through learning.
+                                    <br> As a frontend developer applicant, I'm eager to explore exciting opportunities!
+                                </p>                        
                             </div>
-                            <div class="img-cropper">
-                                <img src="static/banner.JPG" class="img-event" alt="tea ceremony photo" width="150px" height="150px">
+                            <div class="tab1-content">
+                                <p class="header1">Fun Fact About Me</p>
+                                <div class="event-section">
+                                    <!-- img1 -->
+                                    <div class="event-container">
+                                        <div class="img-wrapper">
+                                            <img src="static/hms.jpg" class="img-event" alt="football photo" width="150px" height="150px">
+                                            <div class="event-content" data-event-content>
+                                                <p>I am a huge fan of Heung Min Son! His spirit of never giving up cheers me a lot!</p>
+                                            </div>                               
+                                        </div>
+                                    </div>
+                                    <!-- img2 -->
+                                    <div class="event-container">
+                                        <div class="img-wrapper">
+                                            <img src="static/tea.jpg" class="img-event" alt="tea ceremony photo" width="150px" height="150px">
+                                            <div class="event-content" data-event-content>
+                                                <p>My crave for matcha drove me to join Tea Ceremony Society to learn more about Japanese tea etiquette.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- img3 -->
+                                    <div class="event-container">
+                                        <div class="img-wrapper">
+                                            <img src="static/coffee.jpg" class="img-event" alt="fitness photo" width="150px" height="150px">
+                                            <div class="event-content" data-event-content>
+                                                <p>I always use Rebecca as my coffee name</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- img4 -->
+                                    <div class="event-container">
+                                        <div class="img-wrapper">
+                                            <img src="static/dog.jpg" class="img-event" alt="fitness photo" width="150px" height="150px">
+                                            <div class="event-content" data-event-content>
+                                                <p>I am a dog person. The moment when my dogs jump at my face, I always feel a mix of surprise and joy.</p>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <!-- img5 -->
+                                    <div class="event-container">
+                                        <div class="img-wrapper">
+                                            <img src="static/czech-flag.svg" class="img-event" alt="fitness photo" width="150px" height="150px">
+                                            <div class="event-content" data-event-content>
+                                                <p>I love learning languages. Guess what! I own a Czech A1 certificate!</p>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <!-- img6 -->
+                                    <div class="event-container">
+                                        <div class="img-wrapper">
+                                            <img src="static/li.jpg" class="img-event" alt="fitness photo" width="150px" height="150px">
+                                            <div class="event-content" data-event-content>
+                                                <p>I successfully met my goal of attending all classes during my undergraduate years, with the exception of oversleeping for one class – which I don't count!</p>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="img-cropper">
-                                <img src="static/banner.JPG" class="img-event" alt="fitness photo" width="150px" height="150px">
+                            <div class="tab1-content">
+                                <p class="header1">
+                                    My 2023 Check List
+                                </p>
+                                <ul class="ul-achievement">
+                                    <li class="li-achievement">Got offer from my dream school</li>
+                                    <li class="li-achievement">Said bye to the company I'd worked with for 3 years and lovely colleagues</li>
+                                    <li class="li-achievement">Celebrated Lunar New Year abroad for the first time</li>
+                                    <li class="li-achievement">Learned Python OOP and applied it to my master's dissertation</li>
+                                    <li class="li-achievement">Enjoyed tulips in Keukenhof finally</li>
+                                    <li class="li-achievement">Had my first marijuana cigarette</li>
+                                    <li class="li-achievement">Traveled to a new country alone</li>
+                                    <li class="li-achievement">Took my family on a trip to 3 cities</li>
+                                    <li class="li-achievement">Dyed my hair for the first time in life</li>
+                                    <li class="li-achievement">Exercised regularly</li>
+                                    <li class="li-achievement">Owned my first moka pot and started make my own coffee</li>
+                                    <li class="li-achievement">Took the initiative to talk with classmates I wanted to know</li>
+                                </ul>   
+                            </div>
+                            <div class="tab1-content">
+                                <p class="header1">My 2024 Resolution</p>
+                                <ul id="toDo-container">
+                                    <li class="toDo-items important">Land a job at my dream company!</li>
+                                    <li class="toDo-items">Finish at least 4 books</li>
+                                    <li class="toDo-items">Practice Calligraphy</li>
+                                    <li class="toDo-items checked">Watch a Premier League game!</li>
+                                    <li class="toDo-items checked">Try acupuncture</li>
+                                </ul>
+                            </div>
+                            <div class="tab1-content">
+                                <p class="header1">Contact me</p>
+                                <a class="contact-p" href="mailto:ichi.lin250@gmail.com">ichi.lin250@gmail.com</a>
+                            </div>
+                            <br>
+                            <br>
+                        </div>                        
+                    </div>
+                 <div id="projects" class="main_div_2" data-tab-content>
+                    <div class="tab2-content-container">
+                        <div class="tab2-content">
+                            <p class="main-text-para">
+                                <ul class="skill-list">
+                                    <li>Coding Languages:<span class="tags">JavaScript</span><span class="tags">Python</span></li>
+                                    <li>Frameworks: <span class="tags">Bootstrap</span><span class="tags">Node.js</span> <span class="tags">Express.js</span></li>
+                                    <li>Libraries: <span class="tags">D3.js</span><span class="tags">Tkinter</span></li>
+                                    <li>Databases: <span class="tags">MongoDB</span></li>
+                                    <li>Tools: <span class="tags">Git</span><span class="tags">Github</span><span class="tags">Visual Studio Code</span><span class="tags">Tableau</span><span class="tags">Blender</span></li>
+                                </ul>
+
+                            </p>
+                        </div>
+                        <div class="cards-container">
+                            <div class="project-cards">
+                                <div class="prj-header-container">
+                                    <p class="project-header">Football Match Search Website</p>
+                                    <span class="header-line"></span>                                    
+                                </div>
+                                <div class="prj-content-container">
+                                    <div class="prj-img">
+                                        <img src="/static/gameSearch.png" width="400px" height="200px">
+                                    </div>
+                                    
+                                    <ul class="prj-content">
+                                        <li><span class="tags">HTML</span><span class="tags">CSS</span><span class="tags">JavaScript</span><span class="tags">Bootstrap</span><span class="tags">Node.js</span><span class="tags">Express.js</span></li>
+                                        <li>A web application utilizing user location data for real-time Premier League event discovery</li>
+                                        <li>Integrates Google Maps and football match API to pinpoint nearest games</li>
+                                        <li>Under Construction</li>
+                                    </ul> 
+                                </div>
+                            </div>
+                            <div class="project-cards">                            
+                                <div class="prj-header-container">
+                                    <p class="project-header">Interface for Egyptian Hieroglyph Input Method</p>
+                                    <span class="header-line"></span>                                    
+                                </div>
+                                <div class="prj-content-container">
+                                    
+                                <div class="slide-container">
+                                    <div class="slide-item">
+                                        <img src="static/all_glyphs1.png" width="400px" height="200px">
+                                    </div>
+                                    <div class="slide-item">
+                                        <img src="static/all_glyphs2.png" width="400px" height="200px">
+                                    </div>
+                                    <div class="slide-item">
+                                        <img src="static/glyph1.png" width="400px" height="200px">
+                                    </div>
+                                    <div class="slide-item">
+                                        <img src="static/glyph2.png" width="400px" height="200px">
+                                    </div>
+                                    <div class="slide-item">
+                                        <img src="static/glyph3.png" width="400px" height="200px">
+                                    </div>
+                                    <div class="slide-item">
+                                        <img src="static/glyph4.png" width="400px" height="200px">
+                                    </div>
+                                    <a class="slideshow-arrow slideshow-arrow-pre" onclick="adjacentSlide(-1)">❮</a>
+                                    <a class="slideshow-arrow slideshow-arrow-next" onclick="adjacentSlide(1)">❯</a>
+                                </div>                                    
+                                    <ul class="prj-content">
+                                        <li><span class="tags">Python</span><span class="tags">Tkinter</span><span class="tags">Linux</span></li>
+                                        <li>An Graphic User Interface for complex script such as Egyptian Hieroglyphs, served as a tool for Egytian scholars stacking and manipulating hieroglyphs.</li>
+                                        <li>Master Dissertation Project</li>
+                                    </ul> 
+                                </div>
+                            </div>
+                            <div class="project-cards">
+                                <div class="prj-header-container">
+                                    <p class="project-header">Events Search Website</p>
+                                    <span class="header-line"></span>                                    
+                                </div>
+                                <div class="prj-content-container">
+                                    <div class="prj-img">
+                                        <img src="/static/trip-planner1.PNG" width="400px" height="200px">
+                                    </div>
+                                    <ul class="prj-content">
+                                        <li><span class="tags">HTML</span><span class="tags">CSS</span><span class="tags">JavaScript</span><span class="tags">Bootstrap</span><span class="tags">Node.js</span><span class="tags">Express.js</span><span class="tags">MongoDB</span></li>
+                                        <li>A website harnessing user location data to discover events within a specified distance</li>
+                                        <li>Database-driven platform enabling users to log in, add activities, and bookmark activities on an interactive map</li>
+                                        <li>My contribution to this group project:<br/>
+                                            1. Implemented Google Map API<br/>
+                                            2. Designed frontend interface and layout<br/>
+                                            3. Identified and fixed bugs
+                                        </li>
+                                    </ul> 
+                                </div>
+                            </div>
+                            <div class="project-cards">
+                                <div class="prj-header-container">
+                                    <p class="project-header">Survival Rate of Titanic Incident Visualisation</p>
+                                    <span class="header-line"></span>                                    
+                                </div>
+                                <div class="prj-content-container">
+                                    <div class="prj-img">
+                                        <img src="/static/d3.PNG" width="400px" height="200px">
+                                    </div>
+                                    <ul class="prj-content">
+                                        <li><span class="tags">HTML</span> <span class="tags">JavaScript</span><span class="tags">D3.js</span></li>
+                                        <li>An interactive web application that provides insights into survival rate and factors affecting it of Titanic Incident</li>
+                                        <li>My contribution to this group project:<br/>
+                                            1. Designed website structure and layout<br/>
+                                            2. Implemented interactions between the bar chart and the pie chart<br/>
+                                        </li>
+                                        <li><a href="/Titanic-visualisation/titanic-main.html">Go to the website</a></li>
+                                    </ul> 
+                                </div>
+                            </div>
+                            <div class="project-cards">
+                                <div class="prj-header-container">
+                                    <p class="project-header">Emojitar</p>
+                                    <span class="header-line"></span>                                    
+                                </div>
+                                <div class="prj-content-container">
+                                    <div class="prj-img">
+                                        <img src="/static/emojitar1.PNG" width="400px" height="200px">
+                                    </div>
+                                    
+                                    <ul class="prj-content">
+                                        <li><span class="tags">HTML</span><span class="tags">CSS</span><span class="tags">JavaScript</span><span class="tags">Bootstrap</span><span class="tags">Node.js</span><span class="tags">Express.js</span></li>
+                                        <li>A web application that generates customed emojis</li>
+                                        <li>My contribution to this group project:
+                                            <br/>1. Developed backend infrastructure using Node.js
+                                            <br/>2. Created APIs for frontend integration
+                                            <br/>3. Implemented the user authentication system
+                                            <br/>4. Utilized Express.js as a middleware for seamless communication
+                                        </li>
+                                        <li><a href="https://emojitar-982553b6e51a.herokuapp.com/">Go to the website</a></li>
+                                    </ul> 
+                                </div>
+                            </div>
+                            <!-- contact info -->
+                            <div class="project-cards">
+                                <div class="contact-section">
+                                    <p>I hope you like my portfolio &#128516</p>
+                                    <p>I'm still modifying some projects and will update them here soon.</p>
+                                    <p>Feel free to contact me regarding any questions or suggestions :)!</p>
+                                    <p>&#128071 &#128071 &#128071</p>
+                                    <span class="email"><a href="mailto:ichi.lin250@gmail.com">ichi.lin250@gmail.com</a></span>                                    
+                                </div>
+
                             </div>
                         </div>
-
-
-                    </p>
-                        
-
-                </div>
-                
-                <div id="projects" class="main_div_2" data-tab-content>
-                    <br> My programming experience has primarily been in an academic context.
-                </div>
-
-                <div id="contact" class="main_div_3" data-tab-content>
-
-                </div>
-                
+                    </div>
+                </div>             
             </main>
 
         </div>
 
     </div>
-
     <!-- JS -->
     <script src="script.js"></script>
+
 </body>
 </html>
