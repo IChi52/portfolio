@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="https://d3js.org/d3.v7.min.js" charset="utf-8"></script>
+		<title>Sinking of the Titanic: The Survival Rate</title>
+		<style> 
+			body{
+				font-family: sans-serif;
+			}
+			p{
+				color: grey;
+			}
+    		svg{
+                width: 500px;
+                height: 500px
+            }
+            #myDiv {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            #myDiv > div {
+                flex: 1;
+            }
+		</style>
+		
+    </head>
+    
+    <body>
+        <h1>Sinking of the Titanic: The Survival Rate</h1>
+        <h2>This webpage showcases and visualises several factors affecting survival rate in the incident of Titanic in 1912.</h2>
+        <h3>Constructed by Student 220016338 & 220022259</h3>
+        <div id="myDiv" style="width: 1900px;">
+            <div style="width: 200px;">
+                <p>This bar chart shows the number of passengers in the 3 classes of ticket</p>
+                <p>Click the rectangles to see the interaction with other visualisations!</p>
+                <svg id="bar"></svg>
+            </div>
+            <div style="width: 200px;">
+                <p>This pie chart shows the rate of survival</p>
+                <p>Click the slices to see the interaction with other visualisations!</p>
+                <svg id="pie"></svg>
+            </div>
+            <div style="width: 200px;">
+                <p>This population pyramid shows the age distribution according to gender</p>
+                <p>Click the rectangles to see the interaction with other visualisations!</p>
+                <p><span style="color: #2f6499; font-weight: bold;">Blue</span> bars denote male and <span style="color: #fc8d62;font-weight: bold;">orange</span> ones denote female.</p>
+
+                <svg id="pyramid"></svg>
+            </div>
+        </div>
+          <script src="parameter.js"></script>
+          <script src="function.js"></script>
+          <script src="pyramid_function.js"></script>
+          <script src="pie_function.js"></script>
+          <script src="bar_function.js"></script>
+          <script src="main.js"></script>
+    </body>
+</html>
