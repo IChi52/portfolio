@@ -1,8 +1,8 @@
 $base-color: #fff;
 $level1-color: #fff4c4;
-$level2-color: #fcde88;
+$level2-color: #8a8a83;
 $level3-color: #fcd158;
-$level4-color: #ffbb00;
+$level4-color: #1f1c06;
 
 // html, body{
 //     font-family: "Mukta", sans-serif;
@@ -421,7 +421,7 @@ $level4-color: #ffbb00;
             width: 1em;
             background-size: 1rem;
             background-repeat: no-repeat;
-            background-image: url('../static/checkedbox.png');
+            background-image: url('../static/checkbox.svg');
             padding-left: 2em;
             margin-left: 1em;
             margin-top: 5px;
@@ -510,7 +510,7 @@ $level4-color: #ffbb00;
                 margin-top: 1vw;
                 margin-bottom: 0;
                 line-height: 25px;
-                color: #ffbb00;
+                color: $level4-color;
             }
             .header-line{
                 display:block;
