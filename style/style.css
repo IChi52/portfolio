@@ -329,6 +329,9 @@
     flex-wrap: wrap;
     margin-bottom: 1vw;
   }
+  .project-cards .prj-content-container .prj-img {
+    max-width: 95%;
+  }
   .project-cards .prj-content-container .prj-img img {
     max-width: 100%;
     max-height: 100%;
@@ -813,6 +816,9 @@
     flex-wrap: wrap;
     margin-bottom: 1vw;
   }
+  .project-cards .prj-content-container .prj-img {
+    max-width: 95%;
+  }
   .project-cards .prj-content-container .prj-img img {
     max-width: 100%;
     max-height: 100%;
@@ -1290,6 +1296,9 @@
     flex-wrap: wrap;
     margin-bottom: 1vw;
   }
+  .project-cards .prj-content-container .prj-img {
+    max-width: 95%;
+  }
   .project-cards .prj-content-container .prj-img img {
     max-width: 100%;
     max-height: 100%;
@@ -1764,6 +1773,9 @@
     flex-wrap: wrap;
     margin-bottom: 1vw;
   }
+  .project-cards .prj-content-container .prj-img {
+    max-width: 95%;
+  }
   .project-cards .prj-content-container .prj-img img {
     max-width: 100%;
     max-height: 100%;
@@ -2237,6 +2249,9 @@
     flex-direction: row;
     flex-wrap: wrap;
     margin-bottom: 1vw;
+  }
+  .project-cards .prj-content-container .prj-img {
+    max-width: 95%;
   }
   .project-cards .prj-content-container .prj-img img {
     max-width: 100%;
